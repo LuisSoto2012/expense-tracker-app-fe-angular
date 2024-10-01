@@ -1,0 +1,32 @@
+.demo-table {
+  width: 100%;
+}
+
+.demo-button-container {
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: right;
+}
+
+.demo-button + .demo-button {
+  margin-left: 8px;
+}
+
+.mat-column-amount {
+  /*text-align: center;*/
+}
+
+.mat-chip {
+  width: 100px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.action-buttons-cell {
+  text-align: left;
+  padding-left: 0; /* Remove any default padding if needed */
+}
+
+.action-buttons-cell button {
+  margin-right: 8px; /* Adds some spacing between the buttons */
+}

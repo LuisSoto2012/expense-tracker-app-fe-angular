@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-dialog-actions {
+  justify-content: flex-end;
+  padding: 16px 0;
+}
+
+button {
+  margin-left: 8px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.mat-mdc-dialog-content {
+  max-height: 65vh;
+  overflow-y: auto;
+}

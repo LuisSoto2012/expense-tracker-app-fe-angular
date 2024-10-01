@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'expense-tracker-app';
+  @ViewChild('sidenav') sidenav!: MatSidenav;
+
+  title = 'Expense Tracker App';
+  menuOpen = true;
+
+  toggleSidenav() {
+    this.sidenav.toggle();
+  }
 }
